@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Summarizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative; /* Added for absolute positioning of frame */
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #5a67d8;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #5a67d8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #434190;
+    }
+
+    #summary {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #e2e8f0;
+      border-radius: 5px;
+      min-height: 50px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #2d3748;
+      overflow-y: auto;
+    }
+
+    /* Window frame styles */
+    .window-frame {
+      position: absolute;
+      top: -15px; /* Increased for larger frame */
+      left: -15px; /* Increased for larger frame */
+      right: -15px; /* Increased for larger frame */
+      bottom: -15px; /* Increased for larger frame */
+      border: 10px solid #5a67d8; /* Frame color and thickness */
+      border-radius: 15px; /* Increased border radius for a softer look */
+      background-color: #fff; /* Frame background color */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Frame shadow */
+      z-index: -1; /* Ensure the frame is behind content */
+    }
+  </style>
+</head>
+<body>
+  <div class="window-frame"></div> <!-- Added window frame -->
+  <h1>Content Summarizer</h1>
+  <button id="summarize">Summarize Content</button>
+  <div id="summary">Your summary will appear here...</div>
+  <script src="popup.js"></script>
+</body>
+</html>
