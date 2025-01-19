@@ -27,7 +27,7 @@ Before using this extension, you'll need:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/content-summarizer.git
+git clone https://github.com/yourusername/Content-Summarizer.git
 ```
 
 2. Configure the API:
